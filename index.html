@@ -23,7 +23,7 @@
             left: 50%;
             transform: translateX(-50%);
             width: 150px;
-            animation: swing 2s infinite alternate ease-in-out;
+            animation: swing 1s infinite alternate ease-in-out;
         }
         @keyframes swing {
             0% { transform: translateX(-50%) rotate(-5deg); }
@@ -32,10 +32,10 @@
         .animated-character {
             position: absolute;
             width: 100px;
-            animation: moveAround 5s infinite alternate ease-in-out;
+            animation: moveAround 2.5s infinite alternate ease-in-out;
         }
         .char1 { top: 300px; left: 10%; }
-        .char2 { top: 400px; right: 10%; animation-delay: 1s; }
+        .char2 { top: 400px; right: 10%; animation-delay: 0.5s; }
         @keyframes moveAround {
             0% { transform: translateY(0px); }
             100% { transform: translateY(20px); }
@@ -48,6 +48,14 @@
             width: 80%;
             margin-left: auto;
             margin-right: auto;
+        }
+        .address {
+            margin-top: 10px;
+        }
+        .address a {
+            color: #ff4081;
+            text-decoration: none;
+            font-weight: bold;
         }
         audio {
             position: fixed;
@@ -73,6 +81,10 @@
                 <li>9:00 PM - 感谢您的到来！🥰</li>
             </ul>
             <p>让我们一起度过美好的夜晚！✨</p>
+      <div class="address">
+                <p>📍 地址：6, Laluan Mewah Indah 3</p>
+                <p><a href="https://maps.app.goo.gl/f9NHgekBHDrZtaxa7" target="_blank">点击查看 Google 地图</a></p>
+            </div>
         </div>
     </div>
     <audio controls autoplay loop>
