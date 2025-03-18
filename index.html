@@ -29,16 +29,10 @@
             0% { transform: translateX(-50%) rotate(-5deg); }
             100% { transform: translateX(-50%) rotate(5deg); }
         }
-        .animated-character {
-            position: absolute;
-            width: 100px;
-            animation: moveAround 5s infinite alternate ease-in-out;
-        }
-        .char1 { top: 300px; left: 10%; }
-        .char2 { top: 400px; right: 10%; animation-delay: 0.5s; }
-        @keyframes moveAround {
-            0% { transform: translateY(0px); }
-            100% { transform: translateY(20px); }
+        .container {
+    display: flex;
+    justify-content: space-between; /* 让动画角色分别靠左右两侧 */
+    align-items: center;
         }
         .content {
             margin-top: 200px;
@@ -77,10 +71,10 @@
             <ul>
                 <li>6:30 PM - 欢迎抵达</li>
                 <li>7:00 PM - 美味晚餐</li>
-                <li>8:00 PM - 生日蛋糕时间 🎂</li>
+                <li>8:00 PM - 切生日蛋糕 🎂</li>
                 <li>9:00 PM - 感谢您的到来！🥰</li>
             </ul>
-            <p>让我们一起度过美好的夜晚！✨</p>
+            <p>焮釔满1岁啦！让我们一起用欢笑和爱陪伴他的成长！💖</p>
       <div class="address">
                 <p>📍 地址：6, Laluan Mewah Indah 3</p>
                 <p><a href="https://maps.app.goo.gl/f9NHgekBHDrZtaxa7" target="_blank">点击查看 Google 地图</a></p>
@@ -88,8 +82,8 @@
         </div>
     </div>
    <audio controls autoplay loop>
-    <source src="your-music.mp3" type="audio/mp3">
-    <source src="your-music.ogg" type="audio/ogg">
+    <source src="Cute-songs.mp3" type="audio/mp3">
+    <source src="Cute-songs.mp3" type="audio/ogg">
 </audio>
 
 </body>
