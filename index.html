@@ -14,9 +14,32 @@
             margin: 0;
         }
         .container {
-            position: relative;
-            padding: 20px;
-        }
+    display: flex;
+    flex-direction: column; /* 让动画角色和文字部分垂直排列 */
+    align-items: center;
+}
+
+.characters-wrapper {
+    display: flex;
+    justify-content: space-between; /* 让两个动画角色分散两侧 */
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.animated-character {
+    width: 100px;
+    animation: moveAround 2.5s infinite alternate ease-in-out;
+}
+
+.char1 { align-self: flex-start; } /* 左侧角色 */
+.char2 { align-self: flex-end; }   /* 右侧角色 */
+
+@keyframes moveAround {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(20px); }
+}
+
         .main-character {
             position: absolute;
             top: 50px;
@@ -82,8 +105,8 @@
         </div>
     </div>
    <audio controls autoplay loop>
-    <source src="Cute-songs.mp3" type="audio/mp3">
-    <source src="Cute-songs.mp3" type="audio/ogg">
+    <source src="Cutesongs.mp3" type="audio/mp3">
+    <source src="Cutesongs.mp3" type="audio/ogg">
 </audio>
 
 </body>
